@@ -15,7 +15,6 @@ const log = function(e){
              * 所以我们可以通过this去访问所有的变量包括路由、options等等参数
              * */
 
-
         },
         onShow:function(e){
             //重写该方法，并且在触发的时候调用后台接口
