@@ -2,9 +2,20 @@
 //重写之后，我就可以在重写的生命周期函数里面做我们需要的统计了
 const log = function(e){
 
+    let sengLog = function(){
+      //todo 发送数据
+    };
+
     let rewriteAppLifeCycle = {
         onLoad:function(e){
             //重写该方法，并且在触发的时候调用后台接口
+            /**
+             * 重写的生命周期在resetLifeCycle里面通过call指定了this，所以
+             * 当前生命周期的执行环境与原始的生命周期执行环境是一致的，
+             * 所以我们可以通过this去访问所有的变量包括路由、options等等参数
+             * */
+
+
         },
         onShow:function(e){
             //重写该方法，并且在触发的时候调用后台接口
